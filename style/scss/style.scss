@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+$GreenVogue :#023047;
+$EasternBlue : #219EBC;
+$Cornflower :#8ECAE6;
+$SelectiveYellow : #FFB703;
+
+body {
+    background-color: $Cornflower;
+    * {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        color: $GreenVogue;
+    }
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    margin: 10px auto;
+}
+
+div {
+    margin: 20px auto;
+}
+
+input, button {
+    vertical-align: middle;
+    border-width: 4px;
+    border-color: $EasternBlue;
+    outline: none;
+}
+
+input {
+    margin-right: 20px;
+    width: 4rem;
+    height: calc(2rem + 4px);
+    border-style: outset;
+    border-radius: 10px;
+    caret-color: $Cornflower;
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        border-style: inset;
+    }
+}
+
+button {
+    padding: 0.25rem;
+    background-color: $SelectiveYellow;
+    border-style: outset;
+    border-radius: 10px;
+    &:disabled {
+        opacity: 0.5;
+        &:hover {
+            cursor: default;
+        }
+    }
+    &:active {
+        border-style: inset;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
